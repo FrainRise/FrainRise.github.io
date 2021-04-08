@@ -1,0 +1,531 @@
+/* X-Small Devices */
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .container {
+        margin: 0!important;
+    }
+
+    .introduction {
+        height: 650px;
+    }
+
+    /* NAVIGATION */
+    
+    .button-container {
+        display: inline-block;
+    }
+
+    .shown {
+        display: flex!important;
+        height: 350px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        animation: animate 0.5s;
+        background-color: #6F11FF;
+        z-index: 2;
+    }
+
+    @keyframes animate {
+        0%   {
+            opacity: 0;
+            height: 0;
+        }
+    
+        100% { 
+            opacity: 1;
+              height: 350px;
+        }
+    }
+
+    .introduciton-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .introduction-navbar {
+        display: none;
+
+    }
+
+    .introduciton-nav__menu {
+        flex-direction: column;
+    }
+
+    
+    .introduciton-nav__menu,
+    .introduction-nav__signin {
+        width: 100%;
+    }
+
+    .introduction-nav__logo {
+        position: absolute;
+        top: 10px;
+        left: 40%;
+    }
+
+    .introduction-nav__logo {
+        padding-bottom: 2rem;
+    }
+
+    .menu-link {
+        margin: 15px 0;
+    }
+
+    /* INTRO CONTENT*/
+
+    .introduction-main {
+        flex-direction: column;
+        margin: 0;
+        z-index: 1;
+    }
+    
+    .introduction-main__info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .info-wrapper {
+        max-width: 550px;
+        padding: 15px 5px;
+        text-align: center;
+    }
+    
+    .info-wrapper h1 {
+        color: #fff;
+        font: normal bold 40px 'Poppins', sans-serif;
+    }
+    
+    .info-wrapper p {
+        margin-top: 20px;
+        color: #fff;
+        font: normal 17px 'Poppins', sans-serif;
+    }
+    
+    .info-wrapper button {
+        margin-top: 70px;
+        padding: 12px 30px;
+        color: #fff;
+        background-color: var(--main-use-clr);
+        border: none;
+        border-radius: 30px;
+        font: normal 18px 'Poppins', sans-serif;
+        cursor: pointer;
+        transition: all .5s ease-in;
+    }
+    
+    .info-wrapper button:hover {
+        background-color: #fff;
+        color: var(--main-use-clr)
+    }
+    
+    
+    .introduction-main__image {
+        display: none;
+    }
+
+    /* MAIN SECTION */
+
+    /* Divine Elements */
+    .main-section__header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-section__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-section__wrapper:first-child {
+        position: static;
+    }
+
+    .main-section__admission-form {
+        position: static;
+        width: 330px;
+        height: 255px;
+        margin-top: 50px;
+    }
+
+    /* Main Content */
+
+    .main-section__info {
+        margin-top: 100px;
+        padding: 0 50px;
+    }
+
+    .main-section__first{
+        margin-bottom: 75px;
+    }
+
+    .main-section__first, .main-section__second {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+       flex-direction: column;
+    }
+
+    .first__image, .first__info, .second__image, .second__info {
+        width: 100%;
+    }
+
+    .first__image img, .second__image img {
+        display: none;
+    }
+
+    /* ADVANTAGES SECTION */
+
+    .advantages {
+        padding: 75px 0;
+    }
+
+    .advantage-list {
+        flex-direction: column;
+
+    }
+
+    .advantage-list__case {
+        max-width: 330px;
+        margin: 25px 0;
+    }
+
+    /* FOOTER SECTION */
+    .footer-main {
+        height: 100px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .footer-main__copyright {
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .footer-main__menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .ft-menu-link {
+        cursor: pointer;
+        -webkit-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+    }
+
+    .ft-menu-link:hover {
+        color: #505050;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .introduction-nav__logo {
+        position: absolute;
+        top: 10px;
+        left: 35%;
+    }
+}
+
+/* TABLET DEVICES */
+
+@media (min-width: 769px) and (max-width: 992px)  {
+
+    .container {
+        margin: 0!important;
+    }
+
+    .introduction {
+        height: 700px!important;
+    }
+    /* NAVIGATION */
+    .introduction-nav__logo {
+        width: 15%;
+    }
+
+    .introduction-navbar {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .introduciton-nav__menu {
+        width: 25%;
+    }
+    
+    .menu-link {
+        padding: 0 10px;
+    }
+
+    /* Main Block */
+    .introduction-main {
+        margin: 75px 0 0 0;
+    }
+
+    .info-wrapper {
+        width: 350px;
+    }
+
+    .info-wrapper h1 {
+        font-size: 30px;
+    }
+
+    .info-wrapper p {
+        font-size: 15px;
+    }
+    
+    .introduction-main__image {
+        width: 45%;
+    }
+
+    /* MAIN SECTION */
+
+    /* Divine Elements */
+    .main-section__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-section__admission-form {
+        top:-90px;
+        left: 50%;
+        width: 300px;
+    }
+
+    .main-section__admission-form h1 {
+        font-size: 25px;
+        margin-top: 45px;
+    }
+
+    .main-section__admission-form h2 {
+        font-size: 20px;
+    }
+
+    .main-section__quote {
+        margin-top: 200px;
+    }
+
+    /* Main Content */
+    .main.container {
+        margin: 0;
+    }
+
+    .main-section__info {
+        margin-top: 100px;
+        padding: 0 4rem;
+    } 
+    
+    /* ADVANTAGES SECTION */
+    .advantage-list__case {
+        max-width: 250px;
+
+    }
+
+    .advantage-descr {
+        color: var(--font-p-clr);
+        font-size: 14px;
+    }
+
+    /* FOOTER SECTION */
+
+    footer.container {
+        margin: 0 20px!important;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
+
+    .footer-main__menu {
+        font-size: 14px;
+    }
+}
+
+/* SMALL PC SCREENS */
+
+@media (min-width: 993px) and (max-width:1200px){
+    .container {
+        margin: 0!important;
+    }
+
+    .introduction {
+        height: 700px;
+    }
+    /* NAVIGATION */
+    .introduction-nav__logo {
+        width: 15%;
+    }
+
+    .introduction-navbar {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .introduciton-nav__menu {
+        width: 25%;
+    }
+    
+    .menu-link {
+        padding: 0 15px;
+    } 
+    
+    /* Main Block */
+    .introduction-main {
+        margin: 75px 0 0 0;
+    }
+
+    .info-wrapper {
+        width: 450px;
+    }
+
+    .info-wrapper h1 {
+        font-size: 50px;
+    }
+
+    .info-wrapper p {
+        font-size: 17px;
+    }
+    
+    .introduction-main__image {
+        width: 48%;
+    }
+
+    /* MAIN SECTION */
+
+    /* Divine Elements */
+    .main-section__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-section__admission-form {
+        top:-90px;
+        left: 10%;
+    }
+
+    .main-section__quote {
+        margin-top: 200px;
+    }
+
+    /* Main Content */
+    .main-info-wrapper {
+        padding: 0 1rem;
+    }
+
+    .main-section__info {
+        margin-top: 100px;
+        padding: 0 4rem;
+    } 
+
+     /* ADVANTAGES SECTION */
+    .advantage-list__case {
+        max-width: 250px;
+    }
+
+    .advantage-descr {
+        color: var(--font-p-clr);
+        font-size: 15px;
+    }
+
+    /* FOOTER SECTION */
+
+    footer.container {
+        margin: 0 60px!important;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    .footer-main__menu {
+        font-size: 14px;
+    }
+}
+
+/* Medium PC SCREENS */
+
+@media (min-width: 1201px) and (max-width: 1800px) {
+
+    .container {
+        margin: 0!important;
+    }
+
+    .introduction {
+        height: 750px;
+    }
+
+    /* NAVIGATION */
+    .introduction-nav__logo {
+        width: 15%;
+    }
+
+    .introduction-navbar {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .introduciton-nav__menu {
+        width: 25%;
+    }
+    
+    .menu-link {
+        padding: 0 15px;
+    } 
+
+    /* Main Block */
+    .introduction-main {
+        margin: 75px 0 0 0;
+    }
+
+    .info-wrapper {
+        width: 550px;
+    }
+
+    .info-wrapper h1 {
+        font-size: 60px;
+    }
+
+    .info-wrapper p {
+        font-size: 20px;
+    }
+    
+    .introduction-main__image {
+        width: 48%;
+    }
+
+    /* MAIN SECTION */
+
+    /* Divine Elements */
+
+    .main-section__admission-form {
+        top:-90px;
+        left: 25%;
+    }
+
+    .main-section__quote {
+        margin-top: 100px;
+    }
+
+    /* FOOTER SECTION */
+
+    footer.container {
+        margin: 0 60px!important;
+    }
+
+}
