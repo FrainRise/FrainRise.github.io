@@ -117,6 +117,8 @@ p {
 }
 
 .introduction-navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 67%;
 }
