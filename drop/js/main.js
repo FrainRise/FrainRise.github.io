@@ -19,7 +19,7 @@ for (let anchor of anchorLinks) {
 
     let sectionID = anchor.getAttribute('href')
     document.querySelector('' + sectionID).scrollIntoView({
-      alignToTop: true,
+      block: 'start',
       behavior: 'smooth'
     })
   })
