@@ -121,7 +121,7 @@
     .info-wrapper {
         max-width: 550px;
         padding: 15px 5px;
-        margin-top: 150px;
+        margin-top: 70px;
         text-align: center;
     }
     
@@ -198,6 +198,10 @@
     }
 
     /* Main Content */
+
+    .main-section__quote {
+        padding: 0 10px;
+    }
 
     .main-section__info {
         margin-top: 100px;
