@@ -30,6 +30,11 @@ dd {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;

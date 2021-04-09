@@ -16,7 +16,7 @@
         display: inline-block;
     }
 
-    .shown {
+    .introduction-navbar.shown {
         display: -webkit-box!important;
         display: -ms-flexbox!important;
         display: flex!important;
@@ -29,49 +29,46 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        -webkit-animation: animate 0.5s;
-                animation: animate 0.5s;
+        -webkit-animation: animateIn 0.5s;
+                animation: animateIn 0.5s;
         background-color: #6F11FF;
         z-index: 2;
     }
 
-    @-webkit-keyframes animate {
-        0%   {
-            opacity: 0;
-            height: 0;
-        }
-    
-        100% { 
-            opacity: 1;
-              height: 450px;
-        }
-    }
-
-    @keyframes animate {
-        0%   {
-            opacity: 0;
-            height: 0;
-        }
-    
-        100% { 
-            opacity: 1;
-              height: 450px;
-        }
-    }
-
-    .introduciton-nav {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-    }
-
     .introduction-navbar {
         display: none;
+    }
 
+    .sticky {
+        height: 75px;
+    }
+
+    @-webkit-keyframes animateIn {
+        0%   {
+            opacity: 0;
+            height: 0;
+        }
+    
+        100% { 
+            opacity: 1;
+              height: 450px;
+        }
+    }
+
+    @-webkit-keyframes animateOut {
+        0%   {
+            opacity: 1;
+            height: 450px;
+        }
+    
+        100% { 
+            opacity: 0;
+              height: 0;
+        }
+    }
+
+    .introduction-nav {
+        padding: 0;
     }
 
     .introduciton-nav__menu {
@@ -81,7 +78,6 @@
                 flex-direction: column;
     }
 
-    
     .introduciton-nav__menu,
     .introduction-nav__signin {
         width: 100%;
@@ -125,6 +121,7 @@
     .info-wrapper {
         max-width: 550px;
         padding: 15px 5px;
+        margin-top: 150px;
         text-align: center;
     }
     
