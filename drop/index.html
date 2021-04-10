@@ -12,8 +12,17 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
-<body>
-    <header id="home" class="introduction">
+<body onload="delayFunc()">
+    <div class="loader-section" id="loaderSection">
+        <div class="loader-section__loader" >
+            <div class="circle top"></div>
+            <div class="circle bottom"></div>
+            <div class="circle left"></div>
+            <div class="circle movecircle"></div>
+        </div>
+    </div>
+
+    <header id="home" class="introduction block-loading">
         <div id="customHeader">
             <div class="button-container wow animate__animated animate__fadeIn" data-wow-delay="1s" id="btnContainer">
                 <div class="first-bar"></div>
@@ -67,11 +76,11 @@
         </div>
     </header>
 
-    <section id="services" class="main container" >
-        <div class="main-section">
+    <section id="services" class="main container block-loading" >
+        <div class="main-section"  id="contact">
             <div class="main-section__header">
                 <div class="main-section__wrapper">
-                    <form class="main-section__admission-form" id="contact" onsubmit="validateEmail()">
+                    <form class="main-section__admission-form" onsubmit="validateEmail()">
                         <h1 class="admission-form__title" >Apply for admission</h1>
                         <hr class="admission-form__divine-line" />
                         <h2 class="admission-form__descr">Make it more simple!</h2>
@@ -147,7 +156,7 @@
         </div>
     </section>
 
-    <section id="product" class="advantages container">
+    <section id="product" class="advantages container block-loading">
         <div class="advantage-list">
             <div class="advantage-list__case case-first wow animate__animated animate__flipInX" data-wow-delay=".5s" data-wow-duration="1.5s">
                 <a href="#" class="advantage-image gs-img">
@@ -179,7 +188,7 @@
         </div>
     </section>
 
-    <footer class="footer container">
+    <footer class="footer container block-loading">
         <div class="footer-main">
             <div class="footer-main__copyright">
                  <p class="copyright">(c) 2019 Roy Design. All Rights Reserved </p>

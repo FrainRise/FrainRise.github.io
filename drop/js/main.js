@@ -62,3 +62,19 @@ function validateEmail() {
     }
 }
 
+/* Loader feature */
+
+let delay;
+let loaderSection = document.getElementById('loaderSection')
+let sections = document.getElementsByClassName('block-loading')
+
+function delayFunc() {
+    delay = setTimeout(showPage, 3000)
+}
+
+function showPage() {
+    loaderSection.style.display = 'none';
+    for(let section of sections) {
+        section.style.display = 'block'
+    }
+}
