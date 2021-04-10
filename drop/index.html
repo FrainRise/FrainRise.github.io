@@ -28,7 +28,7 @@
                     </a>
                 </div>
                 <div class="introduction-navbar" id="navMenu">
-                    <ul class="introduciton-nav__menu">
+                    <ul class="introduciton-nav__menu" id="navbar">
                         <li class="menu-link">
                             <a href="#home">Home</a>
                         </li>
@@ -71,15 +71,15 @@
         <div class="main-section">
             <div class="main-section__header">
                 <div class="main-section__wrapper">
-                    <form class="main-section__admission-form" id="contact">
+                    <form class="main-section__admission-form" id="contact" onsubmit="validateEmail()">
                         <h1 class="admission-form__title" >Apply for admission</h1>
                         <hr class="admission-form__divine-line" />
                         <h2 class="admission-form__descr">Make it more simple!</h2>
                         <div class="wrapper-input">
-                            <input type="text" class="admission-form__field" placeholder="Enter your email ...">
-                            <a href="#" class="admission-form__submit-btn">
+                            <input type="email" class="admission-form__field" placeholder="Enter your email ..." id="inputField">
+                            <button type="submit" class="admission-form__submit-btn">
                                 <img src="./assets/images/telegram.png" alt="send icon">
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -120,8 +120,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-section__second wow animate__animated animate__backInUp" data-wow-delay="1s">
-                    <div class="second__info">
+                <div class="main-section__second">
+                    <div class="second__info wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                         <div class="main-info-wrapper">
                             <h2 class="info__title">
                                 Welcome to Eduin university,
@@ -139,7 +139,7 @@
                             <button class="info__submit-btn">Get Started</button>
                         </div>
                     </div>
-                    <div class="second__image">
+                    <div class="second__image wow animate__animated animate__fadeInRight" data-wow-delay="1s">
                         <img src="./assets/images/notebook.png" alt="Friends img">
                     </div>
                 </div>
