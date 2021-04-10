@@ -24,12 +24,12 @@
 
     <header id="home" class="introduction block-loading">
         <div id="customHeader">
-            <div class="button-container wow animate__animated animate__fadeIn" data-wow-delay="1s" id="btnContainer">
+            <div class="button-container" id="btnContainer">
                 <div class="first-bar"></div>
                 <div class="second-bar"></div>
                 <div class="third-bar"></div>
             </div>
-            <nav class="introduction-nav wow animate__animated animate__fadeIn" data-wow-delay="1s">
+            <nav class="introduction-nav">
                 <div class="introduction-nav__logo">
                     <a href="#" class="logo">
                         <img src="./assets/images/logo.png" alt="Logo">
@@ -62,7 +62,7 @@
                 <div class="info-wrapper wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
                     <h1 class="info-title">Education for all</h1>
                     <p class="info-descr">
-                        A bank is a financial institution that accepts deposits from the 
+                        A bank is a financial institution that accepts deposits from the
                         public and creates credit. For all of your financial needs 
                     </p>
                     <button class="info-read-btn">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="main-section__second">
-                    <div class="second__info wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                    <div class="second__info wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
                         <div class="main-info-wrapper">
                             <h2 class="info__title">
                                 Welcome to Eduin university,
@@ -148,7 +148,7 @@
                             <button class="info__submit-btn">Get Started</button>
                         </div>
                     </div>
-                    <div class="second__image wow animate__animated animate__fadeInRight" data-wow-delay="1s">
+                    <div class="second__image wow animate__animated animate__fadeInRight" data-wow-delay=".5s">
                         <img src="./assets/images/notebook.png" alt="Friends img">
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                 <a href="#" class="advantage-image sr-img">
                     <img src="./assets/images/success-rate.png" alt="SR info">
                 </a>
-                <h2 class="advantage-title">Global Student</h2>
+                <h2 class="advantage-title">Success Rate</h2>
                 <p class="advantage-descr">
                     Education City is initiative of our Qatar Foundation for Education, Science Community Development. 
                 </p>
@@ -207,7 +207,10 @@
     <script src="./js/main.js"></script>
     <script src="./js/wow/dist/wow.min.js"></script>
     <script>
-        new WOW().init();
+        setTimeout(() => {
+            new WOW().init();
+        }, 3000)
+        
     </script>
 </body>
 </html>

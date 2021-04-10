@@ -80,8 +80,8 @@ function delayFunc() {
 }
 
 function showPage() {
-    loaderSection.style.display = 'none';
+    loaderSection.remove()
     for(let section of sections) {
-        section.style.display = 'block'  
+        section.style.display = 'block'
     }
 }
