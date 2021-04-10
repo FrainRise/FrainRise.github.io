@@ -430,7 +430,7 @@ p {
     padding: 12px 30px;
     color: #fff;
     background-color: var(--main-use-clr);
-    border: none;
+    border: 1px solid var(--main-use-clr);
     border-radius: 30px;
     font: normal 18px 'Poppins', sans-serif;
     cursor: pointer;
@@ -442,7 +442,6 @@ p {
 .main-info-wrapper button:hover {
     background-color: #fff;
     color: var(--main-use-clr);
-    border: 1px solid var(--main-use-clr);
 }
 
 /* ADVANTAGES SECTION */
