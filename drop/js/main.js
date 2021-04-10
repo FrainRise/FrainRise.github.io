@@ -48,10 +48,13 @@ const scrollCallback = window.addEventListener('scroll', () => {
 })
 
 /* Sending an email */
-function validateEmail() {
-    let field = document.getElementById('inputField')
+let form = document.getElementById('form')
 
-    var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+function validateEmail(e) {
+    e.preventDefault();
+    
+    let field = document.getElementById('inputField')
+    let regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
     if(field.value.match(regex)) {
         alert('Thank you! We will contact with you soon')
@@ -60,7 +63,11 @@ function validateEmail() {
     } else {
         alert('Something goes wrong... Check your email address once again')
     }
+
+    return false;
 }
+
+form.addEventListener('submit', validateEmail)
 
 /* Loader feature */
 
@@ -75,6 +82,6 @@ function delayFunc() {
 function showPage() {
     loaderSection.style.display = 'none';
     for(let section of sections) {
-        section.style.display = 'block'
+        section.style.display = 'block'  
     }
 }
