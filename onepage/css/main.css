@@ -646,6 +646,7 @@
 .field input {
     width: 200px;
     height: 40px;
+    
 }
 
 .field textarea {
@@ -656,6 +657,7 @@
 .field input, 
 .field textarea {
     margin: 0 50px 0 50px;
+    padding: 0 25px;
     border: none;
     border-top: 1px solid #000;
     cursor: pointer;
@@ -835,4 +837,5 @@
 
 .hidden-section {
     display: none;
+    visibility: hidden;
 }
