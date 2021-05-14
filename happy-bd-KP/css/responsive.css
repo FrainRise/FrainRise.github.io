@@ -1,0 +1,180 @@
+@media (min-width: 350px) and (max-width: 550px) {
+    #card, 
+    #card-front, 
+    #card-content {
+        height: 500px;
+    }
+
+    #card-front, 
+    #card-content {
+        left: 29%;
+        width: 340px;
+    }
+
+    #card h1 { 
+        font-size: 55px;
+    }
+
+    #cakeForKsyu {
+        max-width: 120px;
+        max-height: 120px;
+        margin: 20px auto;
+    }
+
+    .andrewImage,
+    .ksyuImage {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .andrewImage
+    ,.ksyuImage {
+        transform: rotateX(170deg);
+        -webkit-transform: rotateX(170deg);
+    }
+
+    .backside__title {
+        transform: rotateX(170deg);
+        -webkit-transform: rotateX(170deg);
+        font-size: 20px;
+        top: 75%;
+        left: 25%;
+    }
+
+    #card-content {
+        font-size: 15px;
+    }
+
+    #card.full-open #close {
+        transform: rotateX(170deg);
+        -webkit-transform: rotateX(170deg);
+    }
+
+    .content-congrats {
+        font-size: 14px;
+        margin: 5px 0 5px;
+    }
+
+    #card.half-open #card-front,
+    #card.half-close #card-front {
+            transform: translateY(500px) rotateX(0deg);
+       -moz-transform: translateY(500px) rotateX(0deg);
+    -webkit-transform: translateY(500px) rotateX(0deg);
+    }
+
+    #card.full-open #card-front {
+        transform: translateY(500px) rotateX(-180deg);
+        -moz-transform:translateY(500px) rotateX(-180deg);
+        -webkit-transform: translateY(500px) rotateX(-180deg);
+    }
+}
+
+@media (min-width: 551px)  and (max-width: 770px) {
+    #card, 
+    #card-front, 
+    #card-content {
+        height: 600px;
+    }
+
+    #card-front, 
+    #card-content {
+        left: 18%;
+        width: 500px;
+    }
+
+    .andrewImage
+    ,.ksyuImage {
+        transform: rotateX(170deg);
+        -webkit-transform: rotateX(170deg);
+    }
+
+    .backside__title {
+        transform: rotateX(170deg);
+        -webkit-transform: rotateX(170deg);
+        font-size: 25px;
+        top: 80%;
+        left: 28%;
+    }
+
+    #card.full-open #close {
+        transform: rotateX(170deg);
+        -webkit-transform: rotateX(170deg);
+    }
+    
+    #card.half-open #card-front,
+    #card.half-close #card-front {
+            transform: translateY(600px) rotateX(0deg);
+       -moz-transform: translateY(600px) rotateX(0deg);
+    -webkit-transform: translateY(600px) rotateX(0deg);
+    }
+
+    #card.full-open #card-front {
+        transform: translateY(600px) rotateX(-180deg);
+        -moz-transform:translateY(600px) rotateX(-180deg);
+        -webkit-transform: translateY(600px) rotateX(-180deg);
+    }
+}
+
+@media (min-width: 771px) and (max-width: 930px) {
+    #card, 
+    #card-front, 
+    #card-content {
+        height: 500px;
+    }
+
+    #card-front, 
+    #card-content {
+        left: 40%;
+        width: 350px;
+    }
+
+    #card h1 { 
+        font-size: 50px;
+    }
+
+    #cakeForKsyu {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .andrewImage,
+    .ksyuImage {
+        max-width: 180px;
+        max-height: 180px;
+    }
+    
+    .backside__title {
+        font-size: 20px;
+        left: 25%;
+    }
+
+    #card-content {
+        font-size: 15px;
+    }
+
+    .content-congrats {
+        font-size: 14px;
+        margin: 10px 0 5px;
+    }
+}
+
+@media (min-width: 931px) and (max-width: 1050px) {
+    #card, 
+    #card-front, 
+    #card-content {
+        height: 650px;
+    }
+
+    #card-front, 
+    #card-content {
+        left: 40%;
+        width: 450px;
+    }
+}
+
+@media (min-width: 1051px) and (max-width: 1300px) {
+    #card-front, 
+    #card-content{
+        left: 40%;
+    }
+}
