@@ -40,7 +40,7 @@ class Birthday {
   }
   
   update(delta) {
-    ctx.fillStyle = `rgba(220, 116, 140, ${ 4 * delta })`
+    ctx.fillStyle = `rgba(245, 172, 121, ${ 4 * delta })`
     ctx.fillRect(0, 0, this.width, this.height)
 
     for (let firework of this.fireworks) firework.update(delta)
