@@ -1,12 +1,12 @@
 :root {
     /* colors */
-    --background-clr: #DC748C;
-    --primary-card-clr: #fcc2cb;
+    --background-clr: #f5ac79;
+    --primary-card-clr: #f8d4ba;
     --secondary-card-clr: #8E8D8A;
     --text-clr: #f9b4b4;
     --congrats-text-clr: #331717;
     --accent-clr: #E98074;
-    --wrapper-clr: #fbd6d8;
+    --wrapper-clr: #fce9e2;
 
     /* fonts */
     --congratulion-font: 'Pattaya', sans-serif;
@@ -39,7 +39,6 @@ body {
     -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .15);
     box-shadow: 2px 2px 30px rgba(0, 0, 0, .15);
 }
-
 
 #card-content .content-wrapper {
     border-radius: 15px; 
@@ -173,7 +172,7 @@ p.signed {
 
 #card-front button:hover,
 #card-front button:focus {
-    background: #c45871;
+    background: #fa8633;
 }
 
 .floral {
