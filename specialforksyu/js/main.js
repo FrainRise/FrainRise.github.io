@@ -30,7 +30,7 @@
     btnClose.addEventListener('click', () => {
       card.setAttribute('class', 'half-close');
 
-      if (rotationTimer) clearrotationTimerout(rotationTimer);
+      if (rotationTimer) clearTimeout(rotationTimer);
       rotationTimer = setTimeout(() => {
         card.setAttribute('class', '');
         backSide.classList.remove('shown')
