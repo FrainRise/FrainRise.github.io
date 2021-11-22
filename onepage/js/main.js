@@ -1,7 +1,7 @@
 // Navbar sticky effect
 
-let navWrapper = document.getElementById('customHeader')
-let stickyNav = navWrapper.offsetTop
+let navWrapper = document.getElementById('customHeader'),
+    stickyNav = navWrapper.offsetTop;
 
 let scrollCallback = window.addEventListener('scroll', () => {
     if(window.pageYOffset > stickyNav) {
@@ -13,31 +13,27 @@ let scrollCallback = window.addEventListener('scroll', () => {
 
 // Nav links active class
 
-let links = document.querySelectorAll('.list-link a')
-let hrefSections = document.getElementsByClassName('href-section')
-console.log(hrefSections)
+let links = document.querySelectorAll('.list-link a'),
+    hrefSections = document.querySelectorAll('.href-section');  
 
 window.addEventListener('scroll', () => {
-    let index = hrefSections.length
-    
-    while(--index && window.scrollY + 50 < hrefSections[index].offsetTop){}
-    
+    let currentSection = ''
+
+    hrefSections.forEach(section => {
+        const sectionTopPoint = section.offsetTop,
+            sectionHeight = section.clientHeight;
+        if(window.scrollY >= sectionTopPoint - sectionHeight / 3){
+            currentSection = section.getAttribute('id')
+        }
+    })
+
     links.forEach(link => {
         link.classList.remove('active')
+        if(link.classList.contains(currentSection)) {
+            link.classList.add('active')
+        }
     })
-    
-    links[index].classList.add('active')    
 })
-
-/*
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        links.forEach(lnk => lnk.classList.remove('active'))
-        link.classList.add('active')
-    })
-
-})*/
-
 
 // Smooth scrolling to sections
 
@@ -57,8 +53,8 @@ for(let anchor of anchorLinks) {
 
 // Burger-menu 
 
-let btnContainer = document.getElementById('btnContainer')
-let navMenu = document.getElementById('navMenu')
+let btnContainer = document.getElementById('btnContainer'),
+    navMenu = document.getElementById('navMenu');
 
 btnContainer.addEventListener('click', () => {
     btnContainer.classList.toggle('clicked')
@@ -97,7 +93,7 @@ function loaderDelay() {
 let form = document.getElementById('contactForm')
 
 function validateEmail(e) {
-    e.preventDefault();
+    e.preventDefault()
     
     let usernameField = document.getElementById('username')
     let usermailField = document.getElementById('usermail')
@@ -105,7 +101,7 @@ function validateEmail(e) {
     let regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
     if(usermailField.value.match(regex) && usernameField !== '' && messageField !== '') {
-        alert('Thank you! We will contact with you soon')
+        alert('Thank you! We will contact you soon')
 
         usernameField.value = ''
         usermailField.value = ''
